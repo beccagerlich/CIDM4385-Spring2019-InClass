@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cheaper Pizza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+    <style>
+        body {
+            background-color: #ABD5F5;
+        }
+        .center_div {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        .size_pizza1 {
+            height: 50px;
+            width: 50px;
+            background-color: black;
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        .size_pizza2 {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        .size_pizza3 {
+            height: 150px;
+            width: 150px;
+            background-color: black;
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+        <div id="cheaperpizza"></div>
+    <div class="center_div">
+        <div class="container">
+            <h1>Cheaper Pizza</h1>
+            <div class="row">
+                <div class="col">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                        <h2>Welcome!</h2>
+                        <button type="submit" class="btn btn-primary">Begin Order</button>
+                        <br><br><br>
+                    
+                        <h4>Select a pizza size:</h4>
+                        <form action="">
+                            <input type="radio" name="size" value="10'"> 10' <div class="size_pizza1"></div><br>
+                            <input type="radio" name="size" value="12'"> 12' <div class="size_pizza2"></div><br>
+                            <input type="radio" name="size" value="15'"> 15' <div class="size_pizza3"></div><br>
+                        </form>
+                        <br><br><br>
+        
+                        <h4>Select 2 toppings:</h4>
+                        <div class="card-group">
+                            <div class="card">
+                                <img src="src/img/cheese.jpg" class="pizza_img" alt="Plain Cheese" style="width:100%;">
+                                <div class="card-body">
+                                    <h5 class="card-title"> <input type="checkbox" name="topping" value="Cheese"> Cheese Pizza</h5>
+                                    <p class="card-text">Plain cheese pizza.</p>
+                                </div>
+                            </div>
+                        <div class="card">
+                            <img src="src/img/pepperoni.jpg" class="pizza_img" alt="Pepperoni" style="width:100%;">
+                            <div class="card-body">
+                                <h5 class="card-title"><input type="checkbox" name="topping" value="Pepperoni"> Pepperoni</h5>
+                                <p class="card-text">Pepperoni topping.</p>
+                            </div>
+                        </div>
+                            <div class="card">
+                                <img src="src/img/sausage.jpg" class="pizza_img" alt="Sausage" style="width:100%;">
+                                <div class="card-body">
+                                    <h5 class="card-title"> <input type="checkbox" name="topping" value="Sausage"> Sausage</h5>
+                                    <p class="card-text">Suasage topping.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card-group">
+                                    <div class="card">
+                                        <img src="src/img/tomato.jpg" class="pizza_img" alt="Sliced Tomatos" style="width:100%;">
+                                        <div class="card-body">
+                                            <h5 class="card-title"> <input type="checkbox" name="topping" value="Tomatos"> Sliced Tomatos</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="src/img/pineapple.jpg" class="pizza_img" alt="Pineapple" style="width:100%;">
+                                        <div class="card-body">
+                                            <h5 class="card-title"> <input type="checkbox" name="topping" value="Pineapples"> Pineapple</h5>
+                                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="src/img/spinach.jpg" class="pizza_img" alt="Spinach" style="width:100%;">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><input type="checkbox" name="topping" value="Spinach"> Spinach</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <br>
+
+                        <h4>Local Pizza Bidders & Prices</h4>
+                        <p>Price: Low - High</p>
+                        <form action="">
+                            <input type="radio" name="bidder" value="bidder1"> Bidder $ <br>
+                            <input type="radio" name="bidder" value="bidder3"> Bidder $ <br>
+                            <input type="radio" name="bidder" value="bidder3"> Bidder $ <br>
+                        </form>
+                        <br><br><br>
+
+                        <h4>Confirm Purchase</h4>
+                        <p>Size:<br>
+                        Toppings:<br>
+                        Bidder & $:<br></p>
+                        <button type="submit" class="btn btn-primary">Confirm</button>
+                        <br><br><br>
+
+                        <h2>Your order will be ready shortly!</h2>
+                        <br>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>    
+
+    <!-- React -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> 
+
+    <!-- Our Scripts -->
+    <script type="text/babel" src="src/js/app.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
